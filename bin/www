@@ -20,10 +20,11 @@ app.set("port", port);
  */
 const mongoose = require("mongoose");
 const dev_db_url =
-  "mongodb+srv:/teste1:0987654321@cluster0.cojoign.mongodb.net/local_library?retryWrites=true&w=majority";
+  "mongodb+srv://teste1:0987654321@cluster0.ps1enu1.mongodb.net/?appName=Cluster0";
 const mongoDB = process.env.MONGODB_URI || dev_db_url;
 
 try {
+
   connectMongoose();
 } catch (err) {
   console.error("Failed to connect to MongoDB:", err);
